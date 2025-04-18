@@ -8,7 +8,7 @@ Department of Computer Engineering, Indira College of Engineering and Management
 
 ABSTRACT 
 
-The traditional approach to summarizing dense, complex, and jargon-filled legal documents 
+The traditional approach to summarizing dense, complex, and  jargon-filled  legal documents 
 is  done  manually  and  is  very  time-consuming,  labor-intensive,  prone  to  human  biases,  and 
 the  T5  (Text-to-Text  Transfer 
 applicability-driven.This  study  proposes 
@@ -18,7 +18,7 @@ semantic preservation, and high readability.
 the  use  of 
 
 The Indian Legal Database Corpus (ILDC) is put forward as the primary dataset, which has 
-case judgments written with expert-written summaries that can serve as an ideal benchmark 
+case  judgments written with expert-written summaries that can serve as an  ideal  benchmark 
 for training and evaluating legal document summarization models.The proposed system uses 
 NLP and is fine-tuned on this dataset which allows it to produce brief, legally accurate, and 
 understandable  summaries.All  processes 
@@ -34,10 +34,10 @@ testing on legal contracts, corporate policies, and government regulations is pe
 assess its performance beyond case law. Exploring multilingual legal documents is also 
 considered for expanding the model’s applicability in diverse legal settings. 
 
-The evaluation  process  entrusts different  scoring  systems,  like ROUGE  for textual overlap, 
+The  evaluation  process  entrusts  different  scoring  systems,  like  ROUGE  for textual  overlap, 
 BLEU  for  fluency  and  coherence,  and  semantic  similarity  score  evaluated  with  Sentence-
 BERT  to  ensure  meaning  retention.A  model  of  T5  fine-tuning  on  ILDC  is  professed  as 
-effective in  this study to produce an  efficient and better-summarizing system  in  the area of 
+effective  in  this  study  to  produce  an  efficient  and  better-summarizing  system  in  the  area  of 
 legal texts.  
 
 Keywords: T5, ILDC: Indian Legal Database Corpus, NLP, Semantic Preservation 
@@ -53,7 +53,7 @@ complex  structure,  lengthy  composition,  and  jargon  terminology.  This  pos
 challenges  to  legal  practitioners,  researchers,  and  members  of  the  general  public  who  are 
 required to access, understand, and dissect the contents of these documents in a manner that 
 is as quick as possible. Summarization of legislation documents manually is a tedious process 
-requiring legal expertise, and it has the tendency to lead to varied interpretations depending 
+requiring  legal expertise, and  it has the tendency  to lead to varied  interpretations depending 
 on  the  person  tasked  with  the  summarization.  With  the  Introduction  of  Natural  Language 
 Processing  (NLP)  and  deep  learning,  automated  legal  document  summarization  has  gained 
 significant  interest.  NLP  models  such  as  T5  have  demonstrated  excellent  performance  in 
@@ -63,7 +63,7 @@ literally copied from the text, abstractive summarization generates new text sum
 key points of the document accurately [2]. 
 
 We use the Indian Legal Database Corpus (ILDC) as our Dataset, providing a rich collection 
-of legal  case judgments  with  summaries written by legal  specialists,  ideally suited  for fine-
+of  legal  case  judgments  with  summaries  written by  legal  specialists,  ideally  suited  for  fine-
 tuning our T5 model. If trained on domain-specific legal material, we are able to maintain the 
 produced summaries' key legal terminology and structure correctness. Our system provides a 
 significant  speedup  in  processing  time  while  promoting  other  legal  stakeholders'  increased 
@@ -111,7 +111,7 @@ a) Statistical and Rule-Based Methods
 word is in a document relative to a corpus and determines sentences with highly weighted 
 words [1]. 
 
-  LexRank:  This  is  a graph-based ranking model that assigns  scores to  sentences on their 
+  LexRank:  This  is  a  graph-based  ranking  model  that  assigns  scores to  sentences  on  their 
 
 importance within the document.  
 
@@ -145,15 +145,15 @@ by reconstructing corrupted text inputs [8].
 
 summarising larger documents Time consuming. 
 
-  T5:  T5  approaches  every  NLP  task  as  a  text-to-text  problem,  making  able    to generate  clearer, 
+  T5: T5 approaches  every  NLP  task as a text-to-text  problem,  making  able    to  generate  clearer, 
 
 more coherent summaries while preserving improtant information from the original text.. 
 
 3. Legal Text Summarization Studies: 
 
-  Contract Simplification Using NLP: Legal contracts very often have clauses in complex 
+  Contract Simplification Using NLP: Legal contracts very often  have clauses  in complex 
 form  and  thereby  require  simplification.  NLP  Techniques,  like  dependency  parsing, 
-Named Entity Recognition (NER), and neural summarization models, have been used to 
+Named Entity Recognition (NER), and neural summarization  models, have been used to 
 build readable summaries of contracts 
 
   Regulatory  Document  Summarization:  Governments  and  legal  institutions  create  vast 
@@ -206,10 +206,10 @@ laws, dates, and organizations using spaCy-based
 Named Entity Recognition-NER-in order to prevent important information loss;  
 
 Handling  Large  Documents:  In  cases  of  large  legal  texts,  the  transformer  models  can  only 
-accept input of limited size. Therefore, the text will be broken down into chunks that make 
+accept input of  limited  size. Therefore, the text will  be  broken down  into chunks that make 
 sense at the level of meaningful sentences without severing them at wrong positions.  
 
-Model Architecture: The architecture of the NLP system is based on the T5 model, which 
+Model Architecture: The architecture of the NLP system  is  based on the T5 model, which 
 treats every NLP problem as a text-to-text task. The model is pre-trained on a diverse range 
 of text corpora from which it learns high-quality abstracts and fine-tuned on ILDC to cater to 
 
@@ -226,7 +226,7 @@ merged thereafter to form a complete summary, ensuring that this final summary i
 
 Post-Processing: For ensuring high-quality summaries:  
 
-Length  Control-This  difficult  challenge is  solved by the use of Dynamic Adjustment of the 
+Length  Control-This  difficult  challenge  is  solved  by  the  use  of  Dynamic  Adjustment of  the 
 Summary Length, which aims to maintain the summary length between 35% and 75% of the 
 length of the original document. 
 
@@ -266,33 +266,71 @@ reference.
 
  
  
-                                          V. ERROR ANALYSIS                     
+                                          V. ERROR ANALYSIS   
 
-To investigate the shortcomings and difficulties we encounter during this summarization 
-model, we performed an  error analysis, targeting: 
+To  investigate  the  shortcomings  and  difficulties  we  encounter  during  this  summarization 
+targeting: 
+model, 
 
-Legal Ambiguities – Several legal terminologies are context dependent and sometimes are 
-starting to be misinterpreted  by the model. 
+performed 
 
-Incompleteness of Critical Annotations — Some essential legal points  or authority may be 
-left out of the summary. 
+analysis, 
 
-Inaccurate Legal Case Holdings Summary – As described, the model might sometimes 
+an  error 
+
+we 
+
+Legal  Ambiguities  –  Several  legal  terminologies  are  context  dependent  and  sometimes  are 
+model. 
+starting 
+
+misinterpreted  by 
+
+the 
+
+be 
+
+to 
+
+Incompleteness  of  Critical  Annotations  —  Some  essential  legal  points  or  authority  may  be 
+summary. 
+left 
+
+out 
+
+the 
+
+of 
+
+Inaccurate  Legal  Case  Holdings  Summary  –  As  described,  the  model  might  sometimes 
 produce results  that are misleading from a legal point of view, hence needs to be fine-tuned. 
 
 Legal Citations and References — Legal  documents reference cases, statutes, and other legal 
-authorities that the model struggles to summarize correctly. 
+correctly. 
+authorities 
+
+summarize 
+
+struggles 
+
+model 
+
+that 
+
+the 
+
+to 
 
 In order to  address these issues, we suggest that further contributions must be made towards 
-fine tuning datasets, the incorporation of legal expert feedback as well as post-processing 
+fine  tuning  datasets,  the  incorporation  of  legal  expert  feedback  as  well  as  post-processing 
 correction methods to ensure reliability of the summary. 
 
                                       VI. RESULTS AND DISCUSSION 
 
 Through fine-tuning T5 on ILDC, our model was able to summarize legal documents, which 
 it does with high accuracy. The produced summaries preserve all relevant legal information, 
-leaving no crucial detail behind during the summarizing process. The summaries are clear, 
-and easy to read, and would also be understandable to a wider audience of legal 
+leaving  no  crucial  detail  behind  during  the  summarizing  process.  The  summaries  are  clear, 
+and  easy  to  read,  and  would  also  be  understandable  to  a  wider  audience  of  legal 
 professionals, scholars, and the general public. 
 
 Fig. Evaluation Comparison: 
@@ -339,7 +377,7 @@ Tuned on ILDC)
 
 0.85+ 
 
- 
+                         
  
  
  
@@ -383,20 +421,20 @@ NLP community for facilitating advancements in legal AI research.
  
  
  
-REFERENCES: 
+                                              VII REFERENCES 
 
 [1]  Raffel,  C.,  Shazeer,  N.,  Roberts,  A.,  et  al.,  "Exploring  the  Limits  of  Transfer  Learning 
-with a Unified Text-to-Text Transformer,"  Journal of Machine Learning Research, vol. 21, 
+with  a  Unified  Text-to-Text Transformer,"  Journal  of  Machine  Learning  Research,  vol.  21, 
 no. 140, pp. 1-67, 2020.  Refer Link 
 
-[2] Vaswani,  A., Shazeer, N., Parmar, N.,  et  al.,  "Attention  Is All  You Need,"  Advances in 
+[2]  Vaswani,  A.,  Shazeer,  N.,  Parmar,  N.,  et  al., "Attention  Is  All  You  Need,"  Advances  in 
 Neural Information Processing Systems, vol. 30, 2017. Link 
 
 [3]  Zhang,  J.,  Zhao,  Y.,  Saleh,  M.,  et  al.,  "PEGASUS:  Pre-training  with  Extracted  Gap-
 sentences  for  Abstractive  Summarization,"  International  Conference  on  Machine  Learning 
 (ICML), 2020. Link 
 
-[4] Narayan, S., Cohen,  S. B.,  Lapata, M.,  "Don’t  Give Me the Details,  Just the Summary! 
+[4]  Narayan,  S.,  Cohen,  S.  B.,  Lapata,  M.,  "Don’t  Give  Me  the  Details,  Just the  Summary! 
 Topic-Aware  Convolutional  Neural  Networks  for  Extreme  Summarization,"  Proceedings  of 
 the  2018  Conference  on  Empirical  Methods  in  Natural  Language  Processing  (EMNLP), 
 2018. Link 

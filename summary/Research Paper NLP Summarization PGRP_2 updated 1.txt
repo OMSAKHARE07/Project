@@ -1,0 +1,11 @@
+The traditional approach to summarizing dense, complex, and jargon-filled legal documents is done manually. The Indian Legal Database Corpus (ILDC) is put forward as the primary dataset. The proposed system uses NLP and is fine-tuned on this dataset which allows it to produce brief, legally accurate, and understandable summaries.
+
+Legal text summarization has been a major area of research, with different approaches being proposed over the years to improve the precision and efficiency of the summarization system. The present work seeks to build a NLP-based legal summaries system. It provides a significant speedup in processing time while promoting other legal stakeholders' increased accessibility and readability.
+
+Legal contracts very often have clauses in complex form and require simplification. NLP-based systems have been proposed which are trained on specialized database of document to simplify regulatory compliance. T5 is a general-purpose language model that frames all NLP tasks as text-to-text transformations. PEGASUS, on the other hand, is a model pre-trained specifically for summarization tasks using a novel objective.
+
+Legal documents are broken into chunks. Each chunk is summarized separately, and these separate chunks are merged to form a complete summary. The model was able to summarize legal documents, which does high accuracy with high reliability. We suggest that further contributions must be made towards fine-tuning the model.
+
+This work shows that T5,  when  fine-tuned  on  ILDC, is highly effective at legal document summaries. The model assures 100% text extraction, meaning preservation, and  readability. Training the T5 model with a multilingual legal database will enhance its ability to process legal documents in regional languages like Hindi, Tamil, and Bengali.
+
+olutional  Neural  Networks  for  Extreme Summarization,"  Proceedings  of  the 2018  Conference  on  Empirical  Methods in Natural  Language  Processing (EMNLP),  2018. Link  grotesquely: "Legal  Document  Summarizing  using  Transformer-based  Models"

@@ -1,0 +1,68 @@
+# Rental Agreement
+
+# Date: April 09, 2025
+# Location: Talegaon Dabhade, Maharashtra
+
+# Parties:
+
+# Landlord:
+Name: [Landlord's Full Name]
+Address: [Landlord's Full Address]
+Contact: [Landlord's Phone Number]
+
+# Tenant:
+Name: [Tenant's Full Name]
+Address: [Tenant's Full Address]
+Contact: [Tenant's Phone Number]
+
+# Property:
+
+Address: [Full Address of Property]
+
+# Term:
+
+Start Date: [Start Date of Lease]
+End Date: [End Date of Lease]
+(e.g., 11 months, month-to-month)
+
+# Rent:
+
+Monthly Rent: ₹[Amount]
+Due Date: [Day of the month]
+Payment Method: [e.g., Cash, Bank Transfer, etc.]
+
+# Security Deposit:
+
+Amount: ₹[Amount]
+Return Policy: [e.g., After deduction for damages, etc.]
+
+# Utilities:
+
+Responsibility for: [e.g., Electricity, Water, etc.]
+Payment Method: [e.g., Landlord pays, Tenant pays, etc.]
+
+# Rules and Regulations:
+
+*   [List any specific rules, e.g., no smoking, no pets, etc.]
+*   [Mention any noise restrictions]
+*   [Mention any parking rules]
+
+# Maintenance and Repairs:
+
+*   [Define who is responsible for routine maintenance]
+*   [Define who is responsible for repairs, e.g., Landlord or Tenant]
+
+# Termination:
+
+*   [Define the notice period for termination]
+*   [Define any penalties for early termination]
+
+# Signatures:
+
+Landlord: _________________________ (Signature)
+
+Tenant: _________________________ (Signature)
+
+Witness: _________________________ (Signature)
+
+Witness: _________________________ (Signature)

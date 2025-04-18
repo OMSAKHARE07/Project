@@ -1,9 +1,0 @@
-fastapi==0.95.2
-uvicorn==0.22.0
-pillow==9.5.0
-pytesseract==0.3.10
-pdfminer.six==20221105
-python-docx==0.8.11
-shutil==0.1.0
-docx2txt
-pywin32  # For handling .doc files (Windows only)
