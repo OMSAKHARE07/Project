@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './HomePage.css';
 import { uploadFile, summarizeFile } from '../services/apiService';
 
 const HomePage = () => {
+  const [loading, setLoading] = useState(false);
+
   const handleUpload = async (e) => {
     e.preventDefault();
     const form = e.target;
@@ -11,9 +13,11 @@ const HomePage = () => {
 
     if (!file) return alert('Please select a file.');
 
+    setLoading(true);
+
     try {
       const uploadResult = await uploadFile(file);
-      
+
       if (uploadResult.filename) {
         await summarizeFile(uploadResult.filename);
         window.location.href = '/result';
@@ -22,6 +26,8 @@ const HomePage = () => {
       }
     } catch (err) {
       alert('Something went wrong: ' + err.message);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -42,11 +48,16 @@ const HomePage = () => {
         <p>
           Empowering legal professionals and individuals by simplifying and summarizing legal documents with AI-powered precision.
         </p>
-        <form onSubmit={handleUpload} className="upload-section" encType="multipart/form-data">
-          <h3>Upload Your Document</h3>
-          <input type="file" name="file" required />
-          <button type="submit">Upload & Summarize</button>
-        </form>
+
+        {loading ? (
+          <div className="loader">⏳ Processing... Please wait</div>
+        ) : (
+          <form onSubmit={handleUpload} className="upload-section" encType="multipart/form-data">
+            <h3>Upload Your Document</h3>
+            <input type="file" name="file" required />
+            <button type="submit">Upload & Summarize</button>
+          </form>
+        )}
       </section>
 
       <section className="features" id="features">
