@@ -35,14 +35,14 @@ This repository uses Git Large File Storage (LFS) to handle large model files.
 
 ## Setting Up Git LFS
 Install Git LFS:
-   # macOS
+   ####  -- macOS
    brew install git-lfs
 
-   # Ubuntu/Debian
+   #### -- Ubuntu/Debian
    sudo apt install git-lfs
 
-   # Windows
-   # Download from https://git-lfs.github.com
+   #### -- Windows
+   ##### Download from https://git-lfs.github.com
 
 ## Enable Git LFS:
    ``` git lfs install ```
