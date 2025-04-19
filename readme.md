@@ -28,8 +28,25 @@ This FastAPI application allows users to upload files (Images, PDFs, and Word do
 - Node.js 14+
 - npm or yarn
 
-
 ## 📦 Installation
+
+### 📦 Large Files & Git LFS
+This repository uses Git Large File Storage (LFS) to handle large model files.
+
+## Setting Up Git LFS
+Install Git LFS:
+   # macOS
+   brew install git-lfs
+
+   # Ubuntu/Debian
+   sudo apt install git-lfs
+
+   # Windows
+   # Download from https://git-lfs.github.com
+
+## Enable Git LFS:
+   ``` git lfs install ```
+
 
 1. Clone the repository:
 
@@ -38,6 +55,8 @@ This FastAPI application allows users to upload files (Images, PDFs, and Word do
    cd project
 
    ```
+## Fetch LFS files 
+   ``` git lfs pull ```
 
 2. Install dependencies:
    ``` bash
